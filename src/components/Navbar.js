@@ -3,6 +3,13 @@ import logo from '../images/logo.png'
 import coverimg from '../images/hero.jpg'
 
 const Navbar = () => {
+    const navLinks = [
+        { label: 'Home', href: '/' },
+        { label: 'About us', href: '/' },
+        { label: 'Services', href: '/' },
+        { label: 'Portfolio', href: '/' },
+        { label: 'Contact', href: '/' },
+    ];
     return (
         <nav className="flex items-center justify-between lg:mx-[100px] p-6 lg:px-8">
             <div className="flex lg:flex-1">
@@ -17,14 +24,13 @@ const Navbar = () => {
                     </svg>
                 </button>
             </div>
-            <div class="hidden text-md lg:flex lg:gap-x-12">
-                <a href="/" class=" font-semibold leading-6 text-gray-900">Home</a>
-                <a href="/" class=" font-semibold leading-6 text-gray-900">About us</a>
-                <a href="/" class=" font-semibold leading-6 text-gray-900">Services</a>
-                <a href="/" class=" font-semibold leading-6 text-gray-900">Portfolio</a>
-                <a href="/" class="font-semibold leading-6 text-gray-900">Contact us</a>
+            <div class="hidden text-md lg:flex lg:gap-x-12 font-semibold leading-6 text-gray-900">
+                {navLinks.map((link, index) => (
+                    <li key={index} className='list-none'>
+                        <a href={link.href}>{link.label}</a>
+                    </li>
+                ))}
             </div>
-
         </nav>
 
     )
