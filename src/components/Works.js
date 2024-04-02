@@ -13,9 +13,9 @@ const Works = () => {
 
     return (
         <section className='bg-white'>
-            <div className="max-w-screen-2xl container mx-auto xl:px-28 px-4 py-16">
+            <div className="max-w-screen-2xl container mx-auto xl:px-28 px-4 pt-16 pb-1">
                 <div className="text-center">
-                    <h2 className="text-3xl font-semibold capitalize mb-5">
+                    <h2 className="text-2xl lg:text-4xl font-extrabold mb-8">
                         Our works
                     </h2>
                 </div>
