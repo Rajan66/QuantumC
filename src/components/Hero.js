@@ -15,9 +15,7 @@ const Hero = () => {
                     <h1 className="text-4xl lg:text-6xl font-extrabold mb-2 lg:mb-10">Leading Towards </h1>
                     <h1 className="ml-4 text-4xl lg:text-6xl font-extrabold mb-2 lg:mb-10 bg-gradient-to-br from-purple-600 to-cyan-400 bg-clip-text text-transparent"> Perfection </h1>
                 </div>
-
                 <p className="text-medium lg:text-lg">You understand your customers better than anyone. We know that, and we can help you turn that knowledge into results.</p>
-
                 <div className='flex mt-[50px] justify-center  '>
                     <button class="border border-black bg-black text-white transition-all hover:bg-white text-lg hover:text-black py-4 px-6 rounded-full mx-10 flex items-center justify-center">
                         <span>Create with Us</span>
