@@ -6,7 +6,7 @@ import wordpress from '../images/icons/wordpress.png'
 
 const Services = () => {
     return (
-        <section className='p-4 md:p-6 lg:p-12'>
+        <section id="services" className='p-4 md:p-6 lg:p-12'>
             <div className='mx-20'>
                 <h1 className='text-2xl lg:text-4xl font-extrabold mb-2 lg:mb-5 '>What we Build</h1>
                 <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-4 '>
