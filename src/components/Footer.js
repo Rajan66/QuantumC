@@ -9,11 +9,12 @@ const Footer = () => {
     <footer className="bg-slate-800">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
-            <a href="/" className="flex items-center">
+          <div className="w-full md:w-1/4 lg:w-1/4 mb-6 md:mb-0">
+            <a href="/" className="flex items-center mb-8">
               <img src={logo} className="h-8 me-3" alt="FlowBite Logo" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Quantum Compilers</span>
             </a>
+            <p className='w-full text-md text-start text-gray-600 mb-2'>We blend our skills for web development into a powerful, agile team. Our team of designers and project managers partner with you to build forward-thinking user experiences</p>
 
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
