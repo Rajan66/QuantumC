@@ -10,8 +10,8 @@ const Trust = () => {
                 </h1>
                 <div className='flex gap-12'>
                     <img src={realdaamLogo} className='w-64 h-full filter grayscale hover:grayscale-0 ease-in-out' />
-                    <img src={realdaamLogo} className='w-64 h-full filter grayscale hover:grayscale-0 ease-in-out' />
-                    <img src={realdaamLogo} className='w-64 h-full filter grayscale hover:grayscale-0 ease-in-out' />
+                    {/* <img src={realdaamLogo} className='w-64 h-full filter grayscale hover:grayscale-0 ease-in-out' />
+                    <img src={realdaamLogo} className='w-64 h-full filter grayscale hover:grayscale-0 ease-in-out' /> */}
                 </div>
             </div>
         </section>

@@ -1,6 +1,5 @@
 import React from 'react'
 import logo from '../images/logo.png'
-import coverimg from '../images/hero.jpg'
 
 const Navbar = () => {
     const navLinks = [
