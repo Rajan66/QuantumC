@@ -9,7 +9,7 @@ import sushan from '../images/aboutus/sushan.jpg'
 
 const Aboutus = () => {
     return (
-        <section className='p-10'>
+        <section className='bg-white p-10'>
             <div className='lg:mx-30'>
                 <div className='flex gap-3 justify-center mb-10 lg:mb-14'>
                     <h1 className='uppercase text-2xl lg:text-4xl font-bold '>Meet our</h1>

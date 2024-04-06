@@ -18,7 +18,7 @@ const Home = () => {
             <Trust />
             <Services />
             <Works />
-            <DevProcess />
+            {/* <DevProcess /> */}
             <Aboutus />
             <Inquiry />
         </>

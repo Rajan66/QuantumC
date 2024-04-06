@@ -4,9 +4,9 @@ import logo from '../images/logo.png'
 const Navbar = () => {
     const navLinks = [
         { label: 'Home', href: '/' },
-        { label: 'About us', href: '#intro' },
-        { label: 'Services', href: '#services' },
-        { label: 'Portfolio', href: '#works' },
+        { label: 'About us', href: '/about' },
+        { label: 'Services', href: '/services' },
+        { label: 'Portfolio', href: '/portfolio' },
     ];
     return (
         <nav className="flex items-center justify-between lg:mx-[100px] p-6 lg:px-8">
