@@ -17,9 +17,9 @@ const About = () => {
                             <h1 className='bg-gradient-to-br from-purple-600 to-cyan-400 bg-clip-text text-transparent text-4xl lg:text-6xl font-bold '>Let's Do It.</h1>
                         </div>
                         <p className='text-xl mb-4'>
-                            We stand as an experienced and trustworthy technology ally, ready to help with your next venture.
+                            Count on us as your dependable technology partner, poised to assist you in your upcoming endeavors.
                         </p>
-                        <p className='text-gray-500 text-md '>Quantum, formed by a team of seasoned founders, CTOs, product designers, and engineers, has grown to a workforce of 450 strong. Over the past decade, we've been instrumental in delivering over a 100 new products. We've forged partnerships with a wide variety of innovative startups and enterprises, building solutions that needed to blend a user-friendly interface with the intricate aspects of data, cloud, and security.</p>
+                        <p className='text-gray-500 text-md '>Quantum Compilers, a team of young, vibrant and passionate individuals, we strive for progress and deliver exceptional service and support. We learn about your unique values your business creates, before building a custom website, to ensure everything to help you and your brand achieve growth.</p>
                         <Link to={`/contact`} class="transition-all text-black hover:text-indigo-300 text-md  py-4 mt-6 flex  items-center justify-start">
                             <span className='uppercase font-bold '>Get in touch</span>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
