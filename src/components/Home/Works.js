@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import realdaam from '../images/realdaam.png'
+import realdaam from '../../images/realdaam.png'
 
 const Works = () => {
 

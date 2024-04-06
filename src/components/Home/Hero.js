@@ -1,6 +1,5 @@
 import React from 'react'
-import coverimg from '../images/hero.jpg'
-import Navbar from './Navbar'
+import coverimg from '../../images/hero.jpg'
 import { Link } from 'react-router-dom'
 
 const Hero = () => {
@@ -18,8 +17,8 @@ const Hero = () => {
                 </div>
                 <p className="text-medium lg:text-lg">You understand your customers better than anyone. We know that, and we can help you turn that knowledge into results.</p>
                 <div className='flex mt-[50px] justify-center  '>
-                    <Link to={'/contact'} class="border border-black bg-black text-white transition-all hover:bg-white text-lg hover:text-black py-4 px-6 rounded-full mx-10 flex items-center justify-center">
-                        <span>Create with Us</span>
+                    <Link to='/contact' class="bg-gradient-to-br from-cyan-400 to-purple-400  text-white transition-all ease-in-out text-lg hover:text-sky-100 py-4 px-6 rounded-full mx-10 flex items-center justify-center">
+                        <span>Create with us</span>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M5 10a1 1 0 011-1h6.586l-2.293-2.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H6a1 1 0 01-1-1z" clipRule="evenodd" />
                         </svg>

@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import About from "./pages/Aboutus"
-import Services from "./pages/Services";
+import ServicesPage from "./pages/ServicesPage";
 import Inquiry from "./components/Inquiry";
 
 function App() {
@@ -18,11 +18,11 @@ function App() {
           <Route path="/" Component={Home} />
           <Route path="/contact" Component={Contact} />
           <Route path="/about" Component={About} />
-          <Route path="/services" Component={Services} />
+          <Route path="/services" Component={ServicesPage} />
         </Routes>
         <Inquiry />
       </Router>
-     
+
       <Footer />
     </div>
   );

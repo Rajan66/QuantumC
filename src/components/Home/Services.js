@@ -1,8 +1,8 @@
 import React from 'react'
-import web from '../images/icons/web.png'
-import machine from '../images/icons/machine.png'
-import app from '../images/icons/app.png'
-import wordpress from '../images/icons/wordpress.png'
+import web from '../../images/icons/web.png'
+import machine from '../../images/icons/machine.png'
+import app from '../../images/icons/app.png'
+import wordpress from '../../images/icons/wordpress.png'
 
 const Services = () => {
     return (

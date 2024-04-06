@@ -1,5 +1,5 @@
 import React from 'react'
-import realdaamLogo from '../images/icons/realdaamLogo.png'
+import realdaamLogo from '../../images/icons/realdaamLogo.png'
 
 const Trust = () => {
     return (

@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Hero from "../components/Hero";
-import Intro from "../components/Intro";
-import Services from "../components/Services";
-import Works from "../components/Works";
+import Hero from "../components/Home/Hero";
+import Intro from "../components/Home/Intro";
+import Services from "../components/Home/Services";
+import Works from "../components/Home/Works";
 
 import DevProcess from "../components/DevProcess";
-import Trust from "../components/Trust";
+import Trust from "../components/Home/Trust";
 
 
 const Home = () => {
