@@ -15,7 +15,7 @@ const Works = () => {
         <section id="works" className=''>
             <div className="max-w-screen-2xl container mx-auto xl:px-28 px-4 pt-16 pb-1">
                 <div className="text-center">
-                    <h1 className="uppercase bg-gradient-to-br from-purple-600 to-cyan-400 bg-clip-text text-transparent text-2xl lg:text-4xl font-bold mb-8">
+                    <h1 className=" bg-gradient-to-br from-purple-600 to-cyan-400 bg-clip-text text-transparent text-2xl lg:text-3xl font-bold mb-8">
                         Our works
                     </h1>
                 </div>

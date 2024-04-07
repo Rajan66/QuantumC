@@ -25,16 +25,16 @@ const Footer = () => {
                   <a href="/">Home</a>
                 </li>
                 <li className="mb-4">
-                  <a href="/">About us</a>
+                  <a href="/about">About us</a>
                 </li>
                 <li className="mb-4">
-                  <a href="/">Services</a>
+                  <a href="/services">Services</a>
                 </li>
                 <li className="mb-4">
-                  <a href="/">Portfolio</a>
+                  <a href="/portfolio">Portfolio</a>
                 </li>
                 <li className="mb-4">
-                  <a href="/">Contact us</a>
+                  <a href="/contact">Contact us</a>
                 </li>
               </ul>
             </div>
@@ -62,10 +62,10 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Get in touch</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#">sales@quantumc.tech</a>
+                  <a  href="mailto: sales@quantumc.tech">sales@quantumc.tech</a>
                 </li>
                 <li>
-                  <a href="#">Kathmandu, Nepal</a>
+                  <a href="">Kathmandu, Nepal</a>
                 </li>
               </ul>
             </div>

@@ -9,8 +9,8 @@ const Services = () => {
         <section id="services" className='bg-white p-10  lg:p-16'>
             <div className='lg:mx-16'>
                 <div className='flex gap-3 justify-center'>
-                    <h1 className='uppercase text-2xl lg:text-4xl font-bold mb-8 lg:mb-8 '>What we</h1>
-                    <h1 className='uppercase bg-gradient-to-br from-purple-600 to-cyan-400 bg-clip-text text-transparent  text-2xl lg:text-4xl font-bold mb-8 lg:mb-8 '>Build</h1>
+                    <h1 className=' text-2xl lg:text-3xl font-bold mb-8 lg:mb-8 '>What we</h1>
+                    <h1 className=' bg-gradient-to-br from-purple-600 to-cyan-400 bg-clip-text text-transparent  text-2xl lg:text-3xl font-bold mb-8 lg:mb-8 '>Build</h1>
                 </div>
                 <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center'>
                     <div class="max-w-sm p-6  border rounded-lg shadow bg-gray-200 border-gray-300 flex flex-col items-center justify-center">

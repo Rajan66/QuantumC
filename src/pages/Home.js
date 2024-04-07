@@ -7,6 +7,7 @@ import Works from "../components/Home/Works";
 
 import DevProcess from "../components/DevProcess";
 import Trust from "../components/Home/Trust";
+import Testomonials from '../components/Home/Testomonials';
 
 
 const Home = () => {
@@ -17,8 +18,9 @@ const Home = () => {
             <Trust />
             <Services />
             <Works />
+            <Testomonials />
             {/* <DevProcess /> */}
-    
+
         </>
     )
 }
