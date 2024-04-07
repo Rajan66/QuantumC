@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+import { motion, useScroll } from "framer-motion"
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -10,6 +12,8 @@ import ServicesPage from "./pages/ServicesPage";
 import Inquiry from "./components/Inquiry";
 
 function App() {
+  const { scrollYProgress } = useScroll()
+
   return (
     <div className="App">
       <Navbar />
@@ -22,6 +26,7 @@ function App() {
         </Routes>
         <Inquiry />
       </Router>
+
 
       <Footer />
     </div>
