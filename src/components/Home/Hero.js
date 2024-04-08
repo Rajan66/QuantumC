@@ -2,19 +2,34 @@ import React from 'react'
 import coverimg from '../../images/hero.jpg'
 import { Link } from 'react-router-dom'
 
+import { motion } from 'framer-motion'
+
 const Hero = () => {
     return (
         <section className='bg-center h-[70vh] bg-cover relative'>
             <div className="absolute inset-0 bg-cover bg-center brightness-50" style={{ backgroundImage: `url(${coverimg})` }}></div>
-            <div className="relative text-white py-12  lg:py-24 lg:px-8 text-center z-10 ">
-                <div class="h-auto flex flex-col mb-5 lg:flex-row justify-center items-center">
+            <div
+                className="relative text-white py-12  lg:py-24 lg:px-8 text-center z-10 ">
+                <motion.div
+                    whileInView={{ y: 0, opacity: 1 }}
+                    initial={{ y: 100, opacity: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    class="h-auto flex flex-col mb-5 lg:flex-row justify-center items-center"
+                >
                     <h1 className="text-4xl lg:text-6xl font-extrabold mb-2 lg:mb-10">Striving for </h1>
                     <h1 className="ml-4 text-4xl lg:text-6xl font-extrabold mb-2 lg:mb-10 bg-gradient-to-br from-purple-600 to-cyan-400 bg-clip-text text-transparent"> Progress </h1>
-                </div>
-                <div class="h-auto flex flex-col mb-5 lg:flex-row justify-center items-center">
+                </motion.div>
+                <motion.div
+                    whileInView={{ y: 0, opacity: 1 }}
+                    initial={{ y: 100, opacity: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    class="h-auto flex flex-col mb-5 lg:flex-row justify-center items-center"
+                >
                     <h1 className="text-4xl lg:text-6xl font-extrabold mb-2 lg:mb-10">Leading Towards </h1>
                     <h1 className="ml-4 text-4xl lg:text-6xl font-extrabold mb-2 lg:mb-10 bg-gradient-to-br from-purple-600 to-cyan-400 bg-clip-text text-transparent"> Perfection </h1>
-                </div>
+                </motion.div>
                 <p className="text-medium lg:text-lg">You understand your customers better than anyone. We know that, and we can help you turn that knowledge into results.</p>
                 <div className='flex mt-[50px] justify-center  '>
                     <Link to='/contact' class="bg-gradient-to-br from-cyan-400 to-purple-400  text-white transition-all ease-in-out text-lg hover:text-sky-100 py-4 px-6 rounded-full mx-10 flex items-center justify-center">

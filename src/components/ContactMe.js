@@ -1,6 +1,9 @@
 import React from 'react'
+import { Bounce, toast } from "react-toastify";
+
 
 const ContactMe = () => {
+
     return (
         <section class="text-gray-600 body-font relative bg-white">
             <div class="flex flex-wrap container px-5 py-24 mx-auto lg:flex-nowrap md:flex-nowrap  ">
@@ -19,24 +22,24 @@ const ContactMe = () => {
                         </div>
                     </div>
                 </div>
-                <div class="lg:w-1/3 md:w-1/2 bg-gradient-to-br from-cyan-200 to-purple-200 p-8 rounded-lg shadow-md flex flex-col md:ml-auto w-full md:py-8 lg:px-10 mt-8 md:mt-0">
+                <form class="lg:w-1/3 md:w-1/2 bg-gradient-to-br from-cyan-200 to-purple-200 p-8 rounded-lg shadow-md flex flex-col md:ml-auto w-full md:py-8 lg:px-10 mt-8 md:mt-0">
                     <div className='flex gap-3 justify-center mb-2 '>
                         <h1 className=' text-2xl  lg:text-4xl font-bold  text-gray-500'>Get In</h1>
                         <h1 className=' bg-gradient-to-br from-purple-600 to-cyan-400 bg-clip-text text-transparent text-2xl md:text-3xl lg:text-4xl font-bold  '>Touch</h1>
                     </div>
                     <p class="leading-relaxed mb-6 text-gray-600">Send us a message below and we'll get back to you</p>
                     <div class="relative mb-6">
-                        <input class="w-full bg-white rounded border border-gray-300 focus:border-blue-100 focus:ring-2 focus:ring-sky-100 text-base outline-none text-gray-700 py-4 px-4 resize-none leading-6 transition-colors duration-200 ease-in-out" type="text" placeholder="Your Name" />
+                        <input class="w-full bg-white rounded border border-gray-300 focus:border-blue-100 focus:ring-2 focus:ring-sky-100 text-base outline-none text-gray-700 py-4 px-4 resize-none leading-6 transition-colors duration-200 ease-in-out" required type="text" placeholder="Your Name" />
                     </div>
                     <div class="relative mb-6">
-                        <input class="w-full bg-white rounded border border-gray-300 focus:border-blue-100 focus:ring-2 focus:ring-sky-100 text-base outline-none text-gray-700 py-4 px-4 resize-none leading-6 transition-colors duration-200 ease-in-out" type="text" placeholder="Company Name" />
+                        <input class="w-full bg-white rounded border border-gray-300 focus:border-blue-100 focus:ring-2 focus:ring-sky-100 text-base outline-none text-gray-700 py-4 px-4 resize-none leading-6 transition-colors duration-200 ease-in-out" required type="text" placeholder="Company Name" />
                     </div>
                     <div class="relative mb-6">
-                        <input class="w-full bg-white rounded border border-gray-300 focus:border-blue-100 focus:ring-2 focus:ring-sky-100  text-base outline-none text-gray-700 py-4 px-4 resize-none leading-6 transition-colors duration-200 ease-in-out" type="text" placeholder="Email" />
+                        <input class="w-full bg-white rounded border border-gray-300 focus:border-blue-100 focus:ring-2 focus:ring-sky-100  text-base outline-none text-gray-700 py-4 px-4 resize-none leading-6 transition-colors duration-200 ease-in-out" required type="email" placeholder="Email" />
                     </div>
                     <div class="relative mb-4">
 
-                        <textarea class="w-full bg-white rounded border border-gray-300 focus:border-blue-100 focus:ring-2 focus:ring-sky-100 h-32 text-base outline-none text-gray-700 py-4 px-4 resize-none leading-6 transition-colors duration-200 ease-in-out" type="text" placeholder="Tell Us About Your Project"></textarea>
+                        <textarea class="w-full bg-white rounded border border-gray-300 focus:border-blue-100 focus:ring-2 focus:ring-sky-100 h-32 text-base outline-none text-gray-700 py-4 px-4 resize-none leading-6 transition-colors duration-200 ease-in-out" required type="text" placeholder="Tell Us About Your Project"></textarea>
                     </div>
                     <button class="border bg-gradient-to-br from-cyan-400 to-purple-400 border-cyan-200  text-white transition-all  text-lg hover:text-sky-100 py-4 px-6 rounded-lg mx-10 flex items-center justify-center">
                         <span>Send Message</span>
@@ -44,7 +47,7 @@ const ContactMe = () => {
                             <path fillRule="evenodd" d="M5 10a1 1 0 011-1h6.586l-2.293-2.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H6a1 1 0 01-1-1z" clipRule="evenodd" />
                         </svg>
                     </button>
-                </div>
+                </form>
             </div>
         </section>
     )
