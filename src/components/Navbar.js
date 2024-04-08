@@ -5,16 +5,9 @@ import { motion } from "framer-motion"
 
 import logo from '../images/logo.png'
 
-const variants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "-100%" },
-}
 
 const Navbar = () => {
-
-
     const [isOpen, setIsOpen] = useState(false)
-
 
     const navLinks = [
         { label: 'Home', href: '/' },
@@ -36,11 +29,13 @@ const Navbar = () => {
                     </svg>
                 </button>
             </div>
-            <div class="hidden text-md lg:flex lg:gap-x-12 font-semibold leading-6 text-gray-900">
+            <div class="hidden text-md lg:flex lg:gap-x-12 font-semibold leading-6 text-gray-900 ">
                 {navLinks.map((link, index) => (
-                    <li key={index} className='list-none'>
+
+                    <li key={index} className='list-none hover:text-orange-400'>
                         <a href={link.href}>{link.label}</a>
                     </li>
+
                 ))}
             </div>
         </motion.nav>

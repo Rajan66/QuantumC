@@ -1,12 +1,15 @@
 import React from 'react'
 
+import { easeInOut, motion } from 'framer-motion'
+
+
 import mission from '../../images/mission.jpg'
 
 const Mission = () => {
     return (
         <section className='mx-auto md:p-10 md:mx-16 lg:p-20 lg:mx-32'>
             <div className='flex gap-32 '>
-                <img className='w-1/2 rounded-br-[200px]' src={mission} />
+                <motion.img whileInView={{ y: 0, opacity: 1 }} initial={{ y: 10, opacity: 0 }} transition={{ ease: easeInOut, duration: 1 }} className='w-1/2 rounded-br-[200px]' src={mission} />
                 <div className='flex justify-start flex-col'>
                     <h1 className='text-black font-bold text-md mb-4 text-start uppercase '>
                         Our mission

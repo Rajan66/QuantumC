@@ -1,7 +1,10 @@
 import React from 'react'
+
+import { easeInOut, motion } from 'framer-motion'
+
 import team from '../../images/team.jpg'
-import mission from '../../images/mission.jpg'
 import { Link } from 'react-router-dom'
+
 
 const About = () => {
     return (
@@ -12,10 +15,14 @@ const About = () => {
                         <h1 className='text-black font-bold uppercase text-md mb-4 font-sans '>
                             About us
                         </h1>
-                        <div className='flex flex-col gap-3 mb-4'>
+                        <motion.div
+                            whileInView={{ x: 0, opacity: 1 }}
+                            initial={{ x: -10, opacity: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 2 }} className='flex flex-col gap-3 mb-4'>
                             <h1 className='text-4xl lg:text-6xl font-bold '>Screw it</h1>
                             <h1 className='bg-gradient-to-br from-purple-600 to-cyan-400 bg-clip-text text-transparent text-4xl lg:text-6xl font-bold '>Let's Do It.</h1>
-                        </div>
+                        </motion.div>
                         <p className='text-xl mb-4'>
                             Count on us as your dependable technology partner, poised to assist you in your upcoming endeavors.
                         </p>
@@ -27,7 +34,7 @@ const About = () => {
                             </svg>
                         </Link>
                     </div>
-                    <img src={team} className='w-full lg:w-1/2 mx-auto rounded-bl-[200px] shadow-xl' />
+                    <motion.img whileInView={{ y: 0, opacity: 1 }} initial={{ y: 10, opacity: 0 }} transition={{ ease: easeInOut, duration: 1 }} src={team} className='w-full lg:w-1/2 mx-auto rounded-bl-[200px] shadow-xl' />
                 </div>
             </div>
         </section>

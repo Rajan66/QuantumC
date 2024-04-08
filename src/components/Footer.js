@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <footer className="bg-slate-800">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <motion.div whileInView={{ y: 0, opacity: 1 }} initial={{ y: 30, opacity: 0 }} transition={{ ease: easeInOut, duration: 1 }} viewport={{once:true}} className="md:flex md:justify-between">
-          <div  className="w-full md:w-1/4 lg:w-1/4 mb-6 md:mb-0">
+        <div className="md:flex md:justify-between">
+          <div className="w-full md:w-1/4 lg:w-1/4 mb-6 md:mb-0">
             <a href="/" className="flex items-center mb-8">
               <img src={logo} className="h-8 me-3" alt="FlowBite Logo" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Quantum Compilers</span>
@@ -65,7 +65,7 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Get in touch</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a  href="mailto: sales@quantumc.tech">sales@quantumc.tech</a>
+                  <a href="mailto: sales@quantumc.tech">sales@quantumc.tech</a>
                 </li>
                 <li>
                   <a href="">Kathmandu, Nepal</a>
@@ -73,7 +73,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-        </motion.div>
+        </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 Quantum Compilers Technology. All Rights Reserved.

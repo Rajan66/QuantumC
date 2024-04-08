@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import { easeInOut, motion } from 'framer-motion'
+
 const Inquiry = () => {
     return (
         <section className='bg-sky-100 p-16'>
             <div className=''>
                 <div className='flex flex-col items-center'>
-                    <h1 className="uppercase text-4xl font-bold mb-2 lg:mb-6  text-indigo-400">Flexible solutions</h1>
+                    <motion.h1 whileInView={{ y: 0, opacity: 1 }} initial={{ y: 10, opacity: 0 }} transition={{ ease: easeInOut, duration: 1 }} viewport={{once:true}} className="uppercase text-4xl font-bold mb-2 lg:mb-6  text-indigo-400">Flexible solutions</motion.h1>
                     <h1 className="uppercase text-4xl mb-2 lg:mb-6">To Meet Your Growing Needs</h1>
                     <p className='text-lg lg:text-2xl w-full lg:w-1/2 text-gray-600 mb-2 lg:mb-6'>We can tailor our solutions to your business and clients. Our team can walk
                         you through product case studies that you can relate to.</p>
