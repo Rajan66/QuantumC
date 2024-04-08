@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { easeInOut, motion } from 'framer-motion'
 
 const ContactMe = () => {
 
@@ -21,7 +21,13 @@ const ContactMe = () => {
                         </div>
                     </div>
                 </div>
-                <form class="lg:w-1/3 md:w-1/2 bg-gradient-to-br from-cyan-200 to-purple-200 p-8 rounded-lg shadow-md flex flex-col md:ml-auto w-full md:py-8 lg:px-10 mt-8 md:mt-0">
+                <motion.form
+                    whileInView={{ x: 0, opacity: 1 }}
+                    initial={{ x: 200, opacity: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    class="lg:w-1/3 md:w-1/2 bg-gradient-to-br from-cyan-200 to-purple-200 p-8 rounded-lg shadow-md flex flex-col md:ml-auto w-full md:py-8 lg:px-10 mt-8 md:mt-0"
+                >
                     <div className='flex gap-3 justify-center mb-2 '>
                         <h1 className=' text-2xl  lg:text-4xl font-bold  text-gray-500'>Get In</h1>
                         <h1 className=' bg-gradient-to-br from-purple-600 to-cyan-400 bg-clip-text text-transparent text-2xl md:text-3xl lg:text-4xl font-bold  '>Touch</h1>
@@ -46,7 +52,7 @@ const ContactMe = () => {
                             <path fillRule="evenodd" d="M5 10a1 1 0 011-1h6.586l-2.293-2.293a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H6a1 1 0 01-1-1z" clipRule="evenodd" />
                         </svg>
                     </button>
-                </form>
+                </motion.form>
             </div>
         </section>
     )

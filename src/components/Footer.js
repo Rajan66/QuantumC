@@ -34,9 +34,6 @@ const Footer = () => {
                   <a href="/services">Services</a>
                 </li>
                 <li className="mb-4">
-                  <a href="/portfolio">Portfolio</a>
-                </li>
-                <li className="mb-4">
                   <a href="/contact">Contact us</a>
                 </li>
               </ul>
