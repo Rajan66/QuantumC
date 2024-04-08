@@ -1,4 +1,7 @@
 import React from 'react'
+
+import { easeInOut, motion } from 'framer-motion'
+
 import logo from '../images/logo.png'
 import insta from '../images/icons/instagram.png'
 import linkedin from '../images/icons/linkedin.png'
@@ -8,8 +11,8 @@ const Footer = () => {
   return (
     <footer className="bg-slate-800">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between">
-          <div className="w-full md:w-1/4 lg:w-1/4 mb-6 md:mb-0">
+        <motion.div whileInView={{ y: 0, opacity: 1 }} initial={{ y: 30, opacity: 0 }} transition={{ ease: easeInOut, duration: 1 }} viewport={{once:true}} className="md:flex md:justify-between">
+          <div  className="w-full md:w-1/4 lg:w-1/4 mb-6 md:mb-0">
             <a href="/" className="flex items-center mb-8">
               <img src={logo} className="h-8 me-3" alt="FlowBite Logo" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Quantum Compilers</span>
@@ -70,7 +73,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 Quantum Compilers Technology. All Rights Reserved.

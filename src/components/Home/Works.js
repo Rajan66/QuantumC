@@ -1,5 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { easeInOut, motion } from 'framer-motion'
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -19,7 +20,7 @@ const Works = () => {
                         Our works
                     </h1>
                 </div>
-                <div className='mb-16'>
+                <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ x: -1000, opacity: 0 }} transition={{ ease: easeInOut, duration: 1 }} viewport={{ once: true }} className='mb-16'>
                     <Swiper
                         slidesPerView={1}
                         spaceBetween={10}
@@ -111,7 +112,7 @@ const Works = () => {
                             </SwiperSlide>
                         </div>
                     </Swiper>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

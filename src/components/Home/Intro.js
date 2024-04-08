@@ -1,12 +1,12 @@
 import React from 'react'
 import introimg from '../../images/intro.jpg'
 import { Link } from 'react-router-dom'
-import { motion } from "framer-motion"
+import { easeInOut, motion } from "framer-motion"
 
 const Intro = () => {
   return (
     <section id="intro" className='bg-white lg:p-10'>
-      <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ x: -1000 }} transition={{ ease: "easeOut", stiffness: 150,delay:0.2 }}  className='flex flex-col lg:flex-row justify-center lg:p-5 lg:gap-20 lg:mx-52'>
+      <motion.div whileInView={{ x: 0, opacity: 1 }} initial={{ x: -1000, opacity: 0 }} transition={{ ease: easeInOut, duration: 1 }} viewport={{ once: true }} className='flex flex-col lg:flex-row justify-center lg:p-5 lg:gap-20 lg:mx-52'>
         <div className=''>
           <img src={introimg} className=' w-screen  lg:h-full lg:mb-5 ' />
         </div>

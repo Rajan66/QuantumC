@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { easeInOut, motion } from 'framer-motion'
+
 import realdaamLogo from '../../images/icons/realdaamLogo.png'
 import realdaam from '../../images/realdaam.png'
 import quote from '../../images/icons/quote.png'
@@ -8,7 +10,7 @@ const Testomonials = () => {
     return (
         <section className='bg-white py-16'>
             <h1 className=' text-2xl lg:text-3xl font-bold mb-10 bg-gradient-to-br from-purple-600 to-cyan-400 bg-clip-text text-transparent'>Testomonials</h1>
-            <div className='flex justify-center gap-16 items-center'>
+            <motion.div whileInView={{ y: 0, opacity: 1 }} initial={{ y: 30, opacity: 0 }} transition={{ ease: easeInOut, duration: 1 }} className='flex justify-center gap-16 items-center'>
                 <img src={realdaam} className='w-42 h-44 rounded-br-[80px]' />
                 <div className='w-1/2'>
                     <img className='w-10 h-10 ' src={quote} />
@@ -25,7 +27,7 @@ const Testomonials = () => {
 
 
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }

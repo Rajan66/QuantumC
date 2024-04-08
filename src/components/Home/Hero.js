@@ -8,13 +8,12 @@ const Hero = () => {
     return (
         <section className='bg-center h-[70vh] bg-cover relative'>
             <div className="absolute inset-0 bg-cover bg-center brightness-50" style={{ backgroundImage: `url(${coverimg})` }}></div>
-            <div
-                className="relative text-white py-12  lg:py-24 lg:px-8 text-center z-10 ">
+            <div className="relative text-white py-12  lg:py-24 lg:px-8 text-center z-10 ">
                 <motion.div
                     whileInView={{ y: 0, opacity: 1 }}
-                    initial={{ y: 100, opacity: 0 }}
+                    initial={{ y: 0, opacity: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 3 }}
                     class="h-auto flex flex-col mb-5 lg:flex-row justify-center items-center"
                 >
                     <h1 className="text-4xl lg:text-6xl font-extrabold mb-2 lg:mb-10">Striving for </h1>
@@ -22,9 +21,9 @@ const Hero = () => {
                 </motion.div>
                 <motion.div
                     whileInView={{ y: 0, opacity: 1 }}
-                    initial={{ y: 100, opacity: 0 }}
+                    initial={{ y: 0, opacity: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 3 }}
                     class="h-auto flex flex-col mb-5 lg:flex-row justify-center items-center"
                 >
                     <h1 className="text-4xl lg:text-6xl font-extrabold mb-2 lg:mb-10">Leading Towards </h1>
